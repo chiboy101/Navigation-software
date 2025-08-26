@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nekede SmartNav - Campus Navigation App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/images/CSS/styles.css">
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div class="splash-screen" id="splash-screen">
+    <img src="assets/Images/logo.png" alt="Nekede SmartNav Logo" class="app-logo">
+    <h1>Nekede SmartNav</h1>
+    <p>Your Campus Companion</p>
+    <div class="loader"></div>
+  </div>
+
+  <!-- Transparent Header -->
+  <header class="transparent-header">
+    <img src="assets/Images/logo.png" alt="Logo" class="logo">
+    <h1 class="campus-name">Nekede SmartNav</h1>
+  </header>
+
+  <!-- Fullscreen Map -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps?q=Nekede,+Nigeria&output=embed" allowfullscreen loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <button class="tab-button active" data-tab="map-tab">
+      <i class="fas fa-map-marked-alt"></i>
+      <span>Map</span>
+    </button>
+    <button class="tab-button" data-tab="search-tab">
+      <i class="fas fa-search"></i>
+      <span>Search</span>
+    </button>
+    <button class="tab-button" data-tab="notices-tab">
+      <i class="fas fa-bell"></i>
+      <span>Notices</span>
+    </button>
+
+    <a href="https://erp.fpno.edu.ng/index.php?login"
+      class="tab-button no-underline text-inherit hover:no-underline focus:no-underline" data-tab="timetable-tab">
+      <i class="fas fa-globe"></i>
+      <span class="no-underline">Portal</span>
+    </a>
+  </nav>
+
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

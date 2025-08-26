@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/images/CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .tab-content {
+      padding: 20px;
+    }
+
+    .notices-container {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .notices-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #007bff;
+      color: white;
+    }
+
+    .notices-header h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .refresh-btn {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .notices-list {
+      padding: 20px;
+    }
+
+    .notice-card {
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .notice-card:last-child {
+      border-bottom: none;
+    }
+
+    .notice-meta {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .category {
+      font-weight: bold;
+    }
+
+    .timestamp {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Transparent Header -->
+  <!-- <header class="transparent-header">
+    <img src="assets/Images/logo.png" alt="Logo" class="logo">
+    <h1 class="campus-name">Nekede SmartNav</h1>
+  </header> -->
+
+  <!-- Notices Tab -->
+  <div id="notices-tab" class="tab-content">
+    <div class="notices-container">
+      <div class="notices-header">
+        <h2>Campus Notices</h2>
+        <button id="refresh-notices" class="refresh-btn">
+          <i class="fas fa-sync-alt"></i>
+        </button>
+      </div>
+      <div id="notices-list" class="notices-list">
+        <div class="notice-card important">
+          <div class="notice-meta">
+            <span class="category">IMPORTANT</span>
+            <span class="timestamp">2 hours ago</span>
+          </div>
+          <h3>Gate 2 Closed for Maintenance</h3>
+          <p>Gate 2 will be closed for maintenance from 8AM-2PM today. Please use Gate 1 or Gate 3.</p>
+        </div>
+
+        <div class="notice-card academic">
+          <div class="notice-meta">
+            <span class="category">ACADEMIC</span>
+            <span class="timestamp">Yesterday</span>
+          </div>
+          <h3>CSC 203 Venue Changed</h3>
+          <p>CSC 203 lecture has been moved from Room 12 to Hall A due to renovations.</p>
+        </div>
+
+        <div class="notice-card event">
+          <div class="notice-meta">
+            <span class="category">EVENT</span>
+            <span class="timestamp">2 days ago</span>
+          </div>
+          <h3>Tech Exhibition Next Week</h3>
+          <p>Join us for the annual Tech Exhibition at the Main Auditorium on June 15th, 2025.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <button class="tab-button active" data-tab="map-tab">
+      <i class="fas fa-map-marked-alt"></i>
+      <span>Map</span>
+    </button>
+    <button class="tab-button" data-tab="search-tab">
+      <i class="fas fa-search"></i>
+      <span>Search</span>
+    </button>
+    <button class="tab-button" data-tab="notices-tab">
+      <i class="fas fa-bell"></i>
+      <span>Notices</span>
+    </button>
+
+    <a href="https://erp.fpno.edu.ng/index.php?login"
+      class="tab-button no-underline text-inherit hover:no-underline focus:no-underline" data-tab="portal-tab">
+      <i class="fas fa-globe"></i>
+      <span class="no-underline">Portal</span>
+    </a>
+  </nav>
+
+</body>
+
+</html>

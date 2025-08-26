@@ -1,0 +1,25 @@
+
+
+[
+  {
+    "name": "Library",
+    "image": "library.jpg",
+    "description": "Central academic resource center"
+    
+  },
+  {
+    "name": "Admin Block",
+    "image": "admin.jpg",
+    "description": "Administrative offices and student services"
+  },
+  {
+    "name": "Student Hostel",
+    "image": "hostel.jpg",
+    "description": "Residential housing for students"
+  },
+  {
+    "name": "ICT Center",
+    "image": "ict.jpg",
+    "description": "Tech support and internet access"
+  }
+]
